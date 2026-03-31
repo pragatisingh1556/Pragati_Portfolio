@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragati Singh | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Rain Canvas -->
+    <canvas id="rain-canvas"></canvas>
+
+    <!-- Scanline Overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Vignette -->
+    <div class="vignette"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">[</span>PS<span class="logo-bracket">]</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" data-text="HOME">HOME</a></li>
+                <li><a href="#about" data-text="ABOUT">ABOUT</a></li>
+                <li><a href="#skills" data-text="SKILLS">SKILLS</a></li>
+                <li><a href="#projects" data-text="PROJECTS">PROJECTS</a></li>
+                <li><a href="#experience" data-text="EXPERIENCE">EXPERIENCE</a></li>
+                <li><a href="#education" data-text="EDUCATION">EDUCATION</a></li>
+                <li><a href="#contact" data-text="CONTACT">CONTACT</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-glitch-wrapper">
+                <p class="hero-greeting" data-text="HEY THERE, I'M">HEY THERE, I'M</p>
+                <h1 class="hero-name glitch" data-text="PRAGATI SINGH">PRAGATI SINGH</h1>
+            </div>
+            <div class="hero-role-wrapper">
+                <span class="hero-role-line"></span>
+                <h2 class="hero-role">FULL STACK DEVELOPER</h2>
+                <span class="hero-role-line"></span>
+            </div>
+            <p class="hero-desc typewriter" id="typewriter"></p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span class="btn-inner">SEE MY WORK</span>
+                    <span class="btn-glow"></span>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span class="btn-inner">SAY HELLO</span>
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/pragatisingh1556" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pragati-singh-0994a13a1" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:pragatisingh1558@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+                <p>SCROLL DOWN</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> ABOUT ME</h2>
+            <div class="about-content">
+                <div class="about-terminal">
+                    <div class="terminal-header">
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-title">pragati@portfolio:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> whoami</p>
+                        <p class="terminal-output">Hey! I'm Pragati -- a B.Tech Computer Science graduate based in Bangalore. I love building things for the web, whether it's a slick frontend or a solid backend API.</p>
+                        <p class="terminal-output">I've spent my time learning Python, JavaScript, React.js, Node.js, and MySQL -- not just theory, but by actually building projects that solve real problems. From detecting fake news with AI to screening resumes automatically, I like working on ideas that make a difference.</p>
+                        <p class="terminal-output">I did my training at Pentagon Space as a Full Stack Developer where I got my hands dirty with real codebases, REST APIs, and databases. I also have a basic understanding of Data Structures and Algorithms.</p>
+                        <p class="terminal-output">Right now, I'm looking for my first full-time developer role where I can learn from experienced devs, write code that matters, and keep growing every day.</p>
+                        <p><span class="prompt">$</span> <span class="cursor-blink">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> WHAT I WORK WITH</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>LANGUAGES</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-display"></i>
+                    </div>
+                    <h3>FRONTEND</h3>
+                    <div class="skill-tags">
+                        <span>React.js</span>
+                        <span>Streamlit</span>
+                        <span>Bootstrap</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3>BACKEND</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>FastAPI</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3>DATABASES</h3>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3>TOOLS</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Postman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> THINGS I'VE BUILT</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-card-border"></div>
+                    <div class="project-header">
+                        <i class="fa-solid fa-shield-halved project-icon"></i>
+                        <a href="https://github.com/pragatisingh1556/truthscan-ai" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> CODE</a>
+                    </div>
+                    <h3>AI-Powered Fake News & Scam Detector</h3>
+                    <div class="project-tech">
+                        <span>Python</span><span>FastAPI</span><span>Groq AI</span><span>MySQL</span><span>Twilio</span>
+                    </div>
+                    <ul>
+                        <li>Built a tool where you can paste any news article, WhatsApp forward, or URL and it tells you if it's fake or a scam -- with a confidence score from 0 to 100%</li>
+                        <li>Used Groq AI to classify content into different scan types like news verification, scam detection, and URL safety checks</li>
+                        <li>Added a WhatsApp bot using Twilio so users can forward suspicious messages and get instant results on their phone</li>
+                        <li>Created a dashboard to track scan history, stats, and risk indicators -- all stored in MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-border"></div>
+                    <div class="project-header">
+                        <i class="fa-solid fa-file-lines project-icon"></i>
+                        <a href="https://github.com/pragatisingh1556/fitscore-ai" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> CODE</a>
+                    </div>
+                    <h3>AI-Powered Resume Screening System</h3>
+                    <div class="project-tech">
+                        <span>Python</span><span>Streamlit</span><span>LangChain</span><span>Groq AI</span><span>PyPDF2</span>
+                    </div>
+                    <ul>
+                        <li>Upload a resume and paste a job description -- the tool tells you how well they match with a fit score from 0 to 100%</li>
+                        <li>Uses LangChain and Groq AI to find matching skills, missing skills, strengths, and gives suggestions on how to improve</li>
+                        <li>Built a clean Streamlit interface where recruiters can upload, analyze, and export reports in seconds</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-border"></div>
+                    <div class="project-header">
+                        <i class="fa-solid fa-bug project-icon"></i>
+                        <a href="https://github.com/pragatisingh1556/bugtracker" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> CODE</a>
+                    </div>
+                    <h3>Full-Stack Bug Tracking System</h3>
+                    <div class="project-tech">
+                        <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>JWT</span><span>Chart.js</span>
+                    </div>
+                    <ul>
+                        <li>A team tool where Admins, Developers, and Testers can report bugs, assign them, and track the full lifecycle from open to resolved</li>
+                        <li>Added login with JWT authentication, password hashing, and a dashboard with pie and bar charts to visualize bug stats</li>
+                        <li>Built a comment section for team discussions and an admin panel to manage users with filtering by severity and priority</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> WHERE I'VE WORKED</h2>
+            <div class="experience-card">
+                <div class="exp-status">
+                    <span class="status-dot"></span> TRAINING COMPLETED
+                </div>
+                <div class="exp-header">
+                    <h3>Full Stack Developer Trainee</h3>
+                    <span class="exp-company">Pentagon Space</span>
+                </div>
+                <p>This is where I got my first real taste of professional development. I worked on building web apps using React.js, Node.js, and MySQL. I learned how to connect frontend with backend through REST APIs, handle database operations, and use Git to collaborate with a team. It was hands-on, fast-paced, and taught me how real projects come together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> MY EDUCATION</h2>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-level">GRADUATION</div>
+                    <h3>B.Tech in Computer Science</h3>
+                    <p class="edu-institute">ISBM University, Chhattisgarh</p>
+                    <p class="edu-score">68%</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-level">12TH STANDARD</div>
+                    <h3>Intermediate</h3>
+                    <p class="edu-institute">Nirala Junior College, Nagpur</p>
+                    <p class="edu-score">83%</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-level">10TH STANDARD</div>
+                    <h3>Secondary</h3>
+                    <p class="edu-institute">Kendriya Vidyalaya No.2, Akhnoor</p>
+                    <p class="edu-score">72%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> GET IN TOUCH</h2>
+            <div class="contact-grid">
+                <a href="mailto:pragatisingh1558@gmail.com" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>EMAIL</h3>
+                    <p>pragatisingh1558@gmail.com</p>
+                </a>
+                <a href="tel:+918871962040" class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>PHONE</h3>
+                    <p>+91 8871962040</p>
+                </a>
+                <a href="https://www.linkedin.com/in/pragati-singh-0994a13a1" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h3>LINKEDIN</h3>
+                    <p>linkedin.com/in/pragati-singh</p>
+                </a>
+                <a href="https://github.com/pragatisingh1556" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>GITHUB</h3>
+                    <p>github.com/pragatisingh1556</p>
+                </a>
+            </div>
+            <div class="contact-location">
+                <i class="fa-solid fa-location-dot"></i> Bangalore, Karnataka, India
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Pragati Singh <span class="footer-sep">|</span> Made with code and lots of chai</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
